@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700,900&family=Poppins:wght@400;500;600;700&display=swap");
+.headline-display-xl, .display-txt-xl {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.headline-display, .display-txt {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.sub-headline-display {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 24px;
+}
+
+h1, .headline-1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+h2, .headline-2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h3, .headline-3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.subtitle-1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.subtitle-2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body-xl {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.body-lg {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.body-1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.body-2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.button-txt {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.label-txt {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.caption-txt {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.overline-txt {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 10px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.overline-link {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: auto;
+}
+
+.num-display {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 28px;
+}
+
+.num-body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.helper-txt {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.site-header {
+  position: sticky;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.site-header .container-fluid {
+  max-width: 1500px !important;
+}
+.site-header .navbar-brand {
+  margin-right: 40px;
+}
+.site-header .navbar-nav .nav-item {
+  margin-right: 32px;
+}
+.site-header .navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+.site-header .navbar-nav .nav-item .nav-link {
+  padding: 0.6rem 0.5rem 0 0.5rem;
+}
+.site-header .navbar-nav .nav-item a {
+  color: #000;
+}
+.site-header .navbar-client-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.site-header .navbar-client-login .client-login-button {
+  padding: 4px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #783DBE;
+  text-decoration: none;
+  border: 2px solid #783DBE;
+  border-radius: 12px;
+  margin-right: 16px;
+}
+.site-header .navbar-client-login .client-login-button::last-child {
+  margin-right: 0;
+}
+.site-header .navbar-client-login .client-login-button:hover {
+  text-decoration: underline;
+}
+.site-header .navbar-client-login .client-login-button .whatsapp {
+  margin-right: 4px;
+}
+
+.site-footer {
+  background-color: #783DBE;
+  color: #fff;
+}
+.site-footer .container-fluid {
+  max-width: 1500px !important;
+}
+@media only screen and (min-width: 768px) {
+  .site-footer .address-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+.site-footer .address-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: flex-end;
+  max-width: 275px;
+}
+
+.site-module {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.page-hero {
+  background-image: url(/assets/atria-logo-bg-vector.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #F9F7FD;
+  margin-bottom: 95px;
+}
+
+.proposito {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2.34%, #FFFFFF), color-stop(33.03%, #F4F0FB), color-stop(70.23%, #F4F0FB), to(#FFFFFF));
+  background: linear-gradient(180deg, #FFFFFF 2.34%, #F4F0FB 33.03%, #F4F0FB 70.23%, #FFFFFF 100%);
+  background-repeat: no-repeat;
+  padding-bottom: 95px;
+}
+.proposito__feature-row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.proposito__feature-row .feature {
+  background: #fff;
+  max-width: 295px;
+  padding: 32px 24px;
+  margin-right: 33px;
+  border-radius: 12px;
+}
+.proposito__feature-row .feature .emoji {
+  font-size: 40px;
+  margin-bottom: 1.5rem;
+}
+.proposito__feature-row .feature .subtitle-1 {
+  margin-top: 1rem;
+}
+.proposito__feature-row .feature:last-child {
+  margin-right: 0;
+}
+
+.ofrecer .text-wrapper {
+  max-width: 450px;
+}
+.ofrecer__list {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.ofrecer__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin-bottom: 16px;
+}
+.ofrecer__list li .purple-check {
+  margin-right: 8px;
+}
+
+.necesita {
+  padding-top: 65px;
+  padding-bottom: 95px;
+  background-color: #F7F7F8;
+}
+.necesita .emoji {
+  font-size: 40px;
+  margin-bottom: 1.5rem;
+}
+.necesita .body-xl {
+  margin-top: 1.5rem;
+}
+.necesita .body-lg {
+  margin-top: 1rem;
+}
+
+.hacemos-posible {
+  position: relative;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  min-height: 719px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(27.58%, #FFFFFF), color-stop(79.51%, #F4F0FB));
+  background: linear-gradient(180deg, #FFFFFF 27.58%, #F4F0FB 79.51%);
+  overflow: hidden;
+}
+.hacemos-posible .arrow-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/atria-logo-arrow-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.hacemos-posible .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.hacemos-posible .carousel .slide {
+  background: #fff;
+  margin-right: 1rem;
+  min-width: 335px;
+  padding: 40px 32px;
+  border-radius: 12px;
+}
+.hacemos-posible .carousel .slide:last-child {
+  margin-right: 0;
+}
+.hacemos-posible .carousel .slide .headline-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
+}
+.hacemos-posible .carousel .slide .title-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 56px;
+  margin-bottom: 24px;
+}
+.hacemos-posible .carousel .slide .title-row .headline-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.hacemos-posible .carousel .slide .title-row .slide-num {
+  color: #AB6BF1;
+}
+.hacemos-posible .carousel .slide .tag {
+  margin-top: 24px;
+}
+
+.form-section {
+  position: relative;
+  padding-top: 160px;
+  padding-bottom: 120px;
+  background-image: url(../assets/car-lot-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form-section .form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.form-section .text-wrapper {
+  max-width: 368px;
+  width: 368px;
+}
+.form-section .headline-display-xl {
+  color: #fff;
+}
+.form-section .body-lg {
+  margin-top: 24px;
+  color: #fff;
+}
+.form-section .form-div label {
+  color: #fff;
+}
+
+.faqs {
+  margin-top: 95px;
+}
+.faqs .faq-content {
+  margin-bottom: 100px;
+}
+.faqs .navigation-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.faqs .navigation-row .nav-item {
+  margin-right: 16px;
+}
+.faqs .navigation-row .nav-item:last-child {
+  margin-right: 0;
+}
+.faqs .navigation-row .nav-link {
+  height: 32px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F7F7F8;
+  color: #323232;
+}
+.faqs .navigation-row .nav-pills .nav-link.active, .faqs .navigation-row .nav-pills .show > .nav-link {
+  background-color: #000000;
+  color: #fff;
+}
+.faqs .accordion .accordion-item {
+  border-left: none;
+  border-right: none;
+  border-color: #7C7C7C !important;
+}
+.faqs .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: #fff;
+  color: #323232;
+  border-left: none;
+  border-right: none;
+  padding: 24px;
+}
+.faqs .accordion .accordion-item .accordion-header .accordion-button::after {
+  background-image: url(../assets/plus.svg) !important;
+}
+.faqs .accordion .accordion-item .accordion-header .accordion-button::focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+.faqs .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+.faqs .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url(../assets/minus.svg) !important;
+}
+.faqs .accordion .accordion-item .accordion-body {
+  padding: 26px !important;
+  text-align: left;
+}

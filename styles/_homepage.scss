@@ -1,0 +1,328 @@
+.page-hero {
+     background-image: url(/assets/atria-logo-bg-vector.svg);
+     background-position: center;
+     background-repeat: no-repeat;
+     // background-size: 50%;
+     background-size:cover;
+     background-color:#F9F7FD;
+     margin-bottom:95px;
+}
+// End: page-hero
+
+
+// Start: proposito
+.proposito {
+     background: linear-gradient(180deg, #FFFFFF 2.34%, #F4F0FB 33.03%, #F4F0FB 70.23%,#FFFFFF 100%);
+     // background: linear-gradient(180deg, #FFFFFF 2.34%, #F4F0FB 33.03%, #FFFFFF 46.23%, #FFFFFF 58.38%, #F4F0FB 73.22%, #F4F0FB 86.98%, #FFFFFF 100%);
+     background-repeat: no-repeat;
+     padding-bottom:95px;
+
+     &__feature-row {
+          justify-content: center;
+          .feature {
+               background:#fff;
+               max-width:295px;
+               padding:32px 24px;
+               margin-right:33px;
+               border-radius:12px;
+
+               .emoji {
+                    font-size:40px;
+                    margin-bottom:1.5rem;
+               }
+
+               .subtitle-1 {
+                    margin-top:1rem;
+               }
+     
+               &:last-child {
+                    margin-right: 0;
+               }
+          }
+     }
+
+
+
+
+}
+// End: proposito
+
+
+// Start: ofrecer
+.ofrecer {
+
+     .text-wrapper {
+          max-width:450px;
+     }
+
+     &__list {
+          list-style:none;
+          padding:0;
+          margin:32px 0;
+          display:flex;
+          flex-direction:column;
+
+          li {
+               display:flex;
+               flex-direction: row;
+               align-items: center;
+               padding:0;
+               margin-bottom:16px;
+
+               .purple-check {
+                    margin-right:8px;
+               }
+          }
+     }
+
+
+}
+// End: ofrecer
+
+
+// Start: necesita
+.necesita {
+     padding-top:65px;
+     padding-bottom:95px;
+     background-color: #F7F7F8;
+
+     .emoji {
+          font-size:40px;
+          margin-bottom:1.5rem;
+     }
+
+     .body-xl {
+          margin-top:1.5rem;
+     }
+
+     .body-lg {
+          margin-top:1rem;
+     }
+
+}
+// End: necesita
+
+
+// Start: hacemos-posible
+.hacemos-posible {
+     position:relative;
+     padding-top:160px;
+     padding-bottom:160px;
+     min-height:719px;
+     background: linear-gradient(180deg, #FFFFFF 27.58%, #F4F0FB 79.51%);
+     overflow:hidden;
+
+     .arrow-bg-overlay {
+          position:absolute;
+          top:0;
+          left:0;
+          width:100%;
+          height:100%;
+          background-image: url(../assets/atria-logo-arrow-pattern.svg);
+          background-repeat: no-repeat;
+          background-position: left bottom;
+     }
+
+     .arrow-bg {
+
+
+     }
+
+     .carousel-container {
+          // overflow:hidden;
+     }
+
+     .carousel {
+          display:flex;
+          flex-direction:row;
+
+          .slide {
+               background:#fff;
+               margin-right:1rem;
+               min-width:335px;
+               padding:40px 32px;
+               border-radius:12px;
+
+               &:last-child {
+                    margin-right:0;
+               }
+
+               .headline-3 {
+                    display:flex;
+                    font-weight:600;
+               }
+
+               .title-row {
+                    display:flex;
+                    flex-direction:row;
+                    align-items: center;
+                    height:56px;
+                    margin-bottom:24px;
+
+                    .headline-3 {
+                         display:flex;
+                         flex-grow:1;
+                    }
+
+                    .slide-num {
+                         color:#AB6BF1;
+                    }
+     
+               }
+
+               .tag {
+                    margin-top:24px;
+               }
+               
+
+
+          }
+     }
+}
+// End: hacemos-posible
+
+
+// Start: form-section
+.form-section {
+     position:relative;
+     padding-top:160px;
+     padding-bottom:120px;
+     background-image: url(../assets/car-lot-bg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+
+     .form-overlay {
+          position:absolute;
+          top:0;
+          left:0;
+          width:100%;
+          height:100%;
+          background-color: rgba($color: #000000, $alpha: .7);
+     }
+     
+     .text-wrapper {
+          max-width:368px;
+          width:368px;
+     }
+
+     .headline-display-xl {
+          color:#fff;
+     }
+
+     .body-lg {
+          margin-top:24px;
+          color:#fff;
+     }
+
+     .form-div {
+          label {
+               color:#fff;
+          }
+     }
+     
+}
+// End: form-section
+
+
+// Start: faqs
+
+.faqs {
+     margin-top:95px;
+     
+     .faq-content {
+          margin-bottom:100px;
+     }
+     .navigation-row {
+          display:flex;
+          flex-direction: row;
+          justify-content:center;
+          margin-top:32px;
+          margin-bottom:32px;
+
+          .nav-item {
+               margin-right:16px;
+               
+               &:last-child {
+                    margin-right:0;
+               }
+          }
+
+          .nav-link {
+               height:32px;
+               border-radius:20px;
+               display:flex;
+               align-items:center;
+               background-color: #F7F7F8;     
+               color:#323232;
+
+          }
+
+          .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+               background-color:#000000;
+               color:#fff;
+          }
+     }
+
+
+     .tab-content {
+          .tab-pane {
+
+          }
+     }
+
+     .accordion {
+
+          .accordion-item {
+               border-left: none;
+               border-right:none;
+               border-color:#7C7C7C !important;
+
+               .accordion-header {
+                    
+                    .accordion-button {
+                         background-color:#fff;
+                         color:#323232;
+                         border-left:none;
+                         border-right:none;
+                         padding:24px;
+
+                         &::after {
+                              background-image:url(../assets/plus.svg) !important;
+                         }
+
+                         &::focus {
+                              box-shadow:none;
+                              border:none;
+                         }
+
+                         &.collapsed {
+
+                         }
+                    }
+
+                    .accordion-button:not(.collapsed) {
+                         box-shadow:none;
+                         border:none;
+                         &::after {
+                              background-image:url(../assets/minus.svg) !important;
+                         }
+                    }
+
+                    .accordion-collapse {
+
+                    }
+
+
+
+               }
+
+               .accordion-body {
+                    padding:26px !important;
+                    text-align: left;
+               }
+          }
+     }
+
+}
+
+// End: faqs
