@@ -1,4 +1,5 @@
 .page-hero {
+     overflow:hidden;
      background-image: url(/assets/atria-logo-bg-vector.svg);
      background-position: center;
      background-repeat: no-repeat;
@@ -6,6 +7,30 @@
      background-size:cover;
      background-color:#F9F7FD;
      margin-bottom:95px;
+
+     @media only screen and (max-width:767px) {
+          margin-bottom:60px;
+     }
+
+     .cta-text-section {
+          .headline-display {
+               font-weight:600 !important;
+               
+               @media only screen and (min-width:768px) {
+                    width:465px;
+               }
+          }
+
+
+          @media only screen and (max-width:767px) {
+               margin-top:32px;
+          }
+     }
+
+     .phone-image {
+          display:flex;
+          justify-content:center;
+     }
 }
 // End: page-hero
 
@@ -15,16 +40,27 @@
      background: linear-gradient(180deg, #FFFFFF 2.34%, #F4F0FB 33.03%, #F4F0FB 70.23%,#FFFFFF 100%);
      // background: linear-gradient(180deg, #FFFFFF 2.34%, #F4F0FB 33.03%, #FFFFFF 46.23%, #FFFFFF 58.38%, #F4F0FB 73.22%, #F4F0FB 86.98%, #FFFFFF 100%);
      background-repeat: no-repeat;
-     padding-bottom:95px;
+     
+     @media only screen and (min-width:768px) {
+          padding-bottom:95px;
+     }
 
      &__feature-row {
           justify-content: center;
+
           .feature {
                background:#fff;
                max-width:295px;
                padding:32px 24px;
-               margin-right:33px;
                border-radius:12px;
+
+               @media only screen and (max-width:767px) {
+                    margin-bottom:32px;
+               }
+
+               @media only screen and (min-width:768px) {
+                    margin-right:32px;
+               }
 
                .emoji {
                     font-size:40px;
@@ -40,8 +76,15 @@
                }
           }
      }
+     .body-lg {
+          margin-top:32px;
+     }
 
-
+     &__headings {
+          @media only screen and (min-width:768px) {
+               text-align:center;
+          }
+     }
 
 
 }
@@ -50,6 +93,7 @@
 
 // Start: ofrecer
 .ofrecer {
+
 
      .text-wrapper {
           max-width:450px;
@@ -61,6 +105,7 @@
           margin:32px 0;
           display:flex;
           flex-direction:column;
+          padding:0 32px;
 
           li {
                display:flex;
@@ -70,8 +115,40 @@
                margin-bottom:16px;
 
                .purple-check {
-                    margin-right:8px;
+                    margin-right:12px;
                }
+          }
+          
+     }
+
+     .car-image-wrapper {
+          padding-left:32px;
+          padding-right:0;
+
+          @media only screen and (max-width:767px) {
+               overflow:hidden;
+          }
+
+          @media only screen and (min-width:768px) {
+               display:flex;
+               align-items:center;
+          }
+          
+          .car-image {
+               max-width:100%;
+
+               &--mobile {
+                    @media only screen and (min-width:768px) {
+                         display:none;
+                    }
+               }
+
+               &--desktop {
+                    @media only screen and (max-width:767px) {
+                         display:none;
+                    }
+               }
+
           }
      }
 
@@ -86,9 +163,10 @@
      padding-bottom:95px;
      background-color: #F7F7F8;
 
-     .emoji {
-          font-size:40px;
-          margin-bottom:1.5rem;
+     h2 {
+          @media only screen and (min-width:768px) {
+               text-align:center;
+          }
      }
 
      .body-xl {
@@ -97,6 +175,33 @@
 
      .body-lg {
           margin-top:1rem;
+     }
+
+     .need-item {
+          display:flex;
+          flex-direction:row;
+          justify-content:flex-start;
+
+          @media only screen and (min-width:768px) {
+               display:flex;
+               flex-direction:column;
+               align-items:center;
+               justify-content: center;
+               text-align:center;
+          }
+
+          .emoji {
+               width:48px;
+               font-size:40px;
+
+               @media only screen and (max-width:768px) {
+                    margin-right:24px;
+                    display:flex;
+                    align-items:flex-start;
+                    margin-top:12px;
+                    margin-bottom:1.5rem;
+               }
+          }
      }
 
 }
@@ -112,6 +217,10 @@
      background: linear-gradient(180deg, #FFFFFF 27.58%, #F4F0FB 79.51%);
      overflow:hidden;
 
+     @media only screen and (max-width:767px) {
+          padding-top:95px;;
+     }
+
      .arrow-bg-overlay {
           position:absolute;
           top:0;
@@ -121,6 +230,12 @@
           background-image: url(../assets/atria-logo-arrow-pattern.svg);
           background-repeat: no-repeat;
           background-position: left bottom;
+
+          @media only screen and (max-width:767px) {
+               background-image: url(../assets/step-slider-bg-logo.svg) ;
+               background-size:cover;
+               opacity:.3;
+          }
      }
 
      .arrow-bg {
@@ -135,6 +250,10 @@
      .carousel {
           display:flex;
           flex-direction:row;
+          
+          @media only screen and (max-width:767px) {
+               margin-top:4rem;
+          }
 
           .slide {
                background:#fff;
@@ -178,6 +297,40 @@
 
           }
      }
+
+     .carousel-navigation {
+          display:flex;
+          flex-direction:row;
+          justify-content:flex-end;
+          margin-top:32px;
+
+          .carousel-nav-button {
+               display:flex;
+               border-radius:24px;
+               height:48px;
+               width:48px;
+               background-color:#000;
+          }
+
+          a {
+               display:flex;
+               align-items:center;
+               justify-content:center;
+               margin-right:16px;
+
+               &:last-child {
+                    margin-right:0;
+               }
+          }
+
+          a.prev-button {
+               background:#7C7C7C;
+          }
+          
+          a.next-button {
+               background:#783DBE;
+          }
+     }
 }
 // End: hacemos-posible
 
@@ -191,6 +344,11 @@
      background-repeat: no-repeat;
      background-size: cover;
 
+     @media only screen and (max-width:767px) {
+          padding-top:78px;
+          padding-bottom:72px;
+     }
+
      .form-overlay {
           position:absolute;
           top:0;
@@ -201,8 +359,19 @@
      }
      
      .text-wrapper {
-          max-width:368px;
-          width:368px;
+
+          .headline-display-xl {
+               line-height:60px;
+          }
+          
+          @media only screen and (max-width:767px) {
+               width:294px;
+          }
+
+          @media only screen and (min-width:768px) {
+               max-width:368px;
+               width:368px;
+          }
      }
 
      .headline-display-xl {
@@ -215,9 +384,17 @@
      }
 
      .form-div {
-          label {
-               color:#fff;
-          }
+
+     }
+
+     .btn-primary {
+          font-family: 'Lato', sans-serif;
+          margin-top:32px;
+          background-color: #AB6BF1;
+          border-color: #AB6BF1;
+          padding:16px 24px;
+          border-radius:12px;
+          font-weight:600;
      }
      
 }
@@ -228,6 +405,16 @@
 
 .faqs {
      margin-top:95px;
+
+     .faq-headline {
+          @media only screen and (max-width:767px) {
+               max-width:75%;
+          }
+          
+          @media only screen and (min-width:768px) {
+               text-align: center;
+          }
+     }
      
      .faq-content {
           margin-bottom:100px;
@@ -235,9 +422,12 @@
      .navigation-row {
           display:flex;
           flex-direction: row;
-          justify-content:center;
           margin-top:32px;
           margin-bottom:32px;
+
+          @media only screen and (min-width:768px) {
+               justify-content:center;
+          }
 
           .nav-item {
                margin-right:16px;
@@ -271,11 +461,16 @@
      }
 
      .accordion {
+          border-top:1px solid #7C7C7C;
 
           .accordion-item {
                border-left: none;
                border-right:none;
                border-color:#7C7C7C !important;
+
+               &:first-child {
+                    // border-top:#323232 solid 1px;
+               }
 
                .accordion-header {
                     
@@ -285,6 +480,7 @@
                          border-left:none;
                          border-right:none;
                          padding:24px;
+                         font-size:18px;
 
                          &::after {
                               background-image:url(../assets/plus.svg) !important;
@@ -317,7 +513,7 @@
                }
 
                .accordion-body {
-                    padding:26px !important;
+                    padding:0 26px 26px 26px !important;
                     text-align: left;
                }
           }

@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="./styles/slick.css">
+
+    
     
 
   </head>
@@ -23,28 +26,35 @@
     <!-- Start: Header -->
     <nav class="site-header navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <img src="/assets/menu-toggle.svg" alt="Toggle Mobile Menu">
+                </span>
+            </button>
 
             <a class="navbar-brand" href="#">
                 <img src="/assets/logo.svg" alt="" width="117" height="32" class="d-inline-block align-text-top">
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
             
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link body-1 active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link jump-link body-1 active" aria-current="page" href="#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link body-1" href="#">Beneficios</a>
+                    <a class="nav-link jump-link body-1" href="#beneficios">Beneficios</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link body-1" href="#">Proceso</a>
+                    <a class="nav-link jump-link body-1" href="#caracteristicas-credito">Características crédito</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link body-1">FAQs</a>
+                    <a class="nav-link jump-link body-1" href="#proceso">Proceso</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link jump-link body-1" href="#faq">FAQs</a>
                     </li>
                 </ul>
             </div>
@@ -53,11 +63,16 @@
 
                 <a class="client-login-button subtitle-2" href="#">
                     <img class="whatsapp" src="/assets/icon-whatsapp.svg" alt="Socio Atria">
-                    Socio Atria</a>
+                    Soy Socio Atria</a>
 
                 <a class="client-login-button subtitle-2" href="#">
                     <img class="whatsapp" src="/assets/icon-whatsapp.svg" alt="Cliente Atria">
-                    Cliente Atria</a>
+                    Soy Cliente Atria</a>
+
+                <a class="client-login-mobile-button">
+                    <img class="whatsapp" src="/assets/icon-whatsapp-black.svg" alt="Whatsapp">
+                </a>
+
 
             </div>
         </div>
@@ -71,12 +86,12 @@
         <div class="container">
             <div class="row pe-lg-0 pt-lg-5 align-items-center">
 
-                <div class="col-lg-5 cta-text-section">
-                    <span class="headline-display">Crédito Automotriz ágil y flexible. El aliado ideal para tu negocio.</span>
+                <div class="col-lg-5 px-4 cta-text-section">
+                    <h1 class="headline-display">Crédito Automotriz ágil y flexible. El aliado ideal para tu negocio.</h1>
                     <p class="sub-headline-display">Crece las ventas de tu lote o agencia vendiendo a crédito con Atria</p>
                 </div>
     
-                <div class="col-lg-7">
+                <div class="col-lg-7 phone-image">
                     <img class="" src="/assets/Home-Atria 1.png" alt="" width="720">
                 </div>
             </div>
@@ -85,52 +100,58 @@
     </div>
     <!-- End: Hero -->
 
-    <!-- Start: Nuestro Proposito -->
-    <div class="proposito">
+    <div class="sticky-footer">
+        <a class="sticky-footer__button headline-2" href="">Quiero ser socio Atria 👆</a>
+    </div>
 
-        <div class="container">
-            <div class="row site-module row-cols-1 text-center">
-                <h2>Nuestro propósito: Ser tu mejor aliado </h2>
-                <h4>Sabemos que no todos tus clientes son iguales. Tenemos una solución diferenciada para cada uno de ellos</h4>
+    <!-- Start: Nuestro Proposito -->
+    <div class="proposito px-4 jump-link" id="inicio">
+
+        <div class="container proposito__headings">
+            <div class="col-md-6 offset-md-3">
+                <h2>Nuestro propósito:<br>Ser tu mejor aliado </h2>
+                <p class="body-lg">Sabemos que no todos tus clientes son iguales. Tenemos una solución diferenciada para cada uno de ellos</p>
+            </div>
+        </div>
+            
+        <div class="row site-module proposito__feature-row">
+            
+            <div class="feature col-xs-12 col-sm-4 text-center">
+                <span class="emoji">✅</span> 
+                <p class="subtitle-1">Créditos flexibles</p>
+                <p class="body-1">Nos ahorramos las complicaciones para dar oportunidades a cualquier persona.</p>
+
             </div>
             
-            <div class="row site-module proposito__feature-row">
-              
-                <div class="feature col text-center">
-                    <span class="emoji">✅</span> 
-                    <p class="subtitle-1">Créditos flexibles</p>
-                    <p class="body-1">Nos ahorramos las complicaciones para dar oportunidades a cualquier persona.</p>
-    
-                </div>
-                
-                <div class="feature col text-center">
-                    <span class="emoji">⚡️</span>
-                    <p class="subtitle-1">Experiencia completamente digital</p>
-                    <p class="body-1">Nuestra app Atria ayuda a dar seguimiento y autorizar cada crédito de forma fácil y segura.</p>
-    
-                </div>
-                
-                <div class="feature col text-center">
-                    <span class="emoji">‍🎩</span>
-                    <p class="subtitle-1">AtriaAssist</p>
-                    <p class="body-1">Tu asistente personal que te acompaña a ti y tus clientes en cada paso hasta la entrega del auto.</p>
-    
-                </div>
+            <div class="feature  col-xs-12 col-sm-4 text-center">
+                <span class="emoji">⚡️</span>
+                <p class="subtitle-1">Experiencia completamente digital</p>
+                <p class="body-1">Nuestra app Atria ayuda a dar seguimiento y autorizar cada crédito de forma fácil y segura.</p>
+
+            </div>
+            
+            <div class="feature col-xs-12 col-sm-4 text-center">
+                <span class="emoji">‍🎩</span>
+                <p class="subtitle-1">AtriaAssist</p>
+                <p class="body-1">Tu asistente personal que te acompaña a ti y tus clientes en cada paso hasta la entrega del auto.</p>
+
             </div>
 
         </div>
 
     </div>
+
+    </div>
     <!-- End: Nuestro Proposito -->
 
     <!-- Start: Ofrecer un credito  -->
-    <div class="site-module ofrecer container">
+    <div class="site-module ofrecer jump-link" id="beneficios">
 
         <div class="container">
 
             <div class="row">
             
-                <div class="col-md-6">
+                <div class="col-md-6 px-4">
 
                     <div class="text-wrapper">
 
@@ -150,8 +171,9 @@
 
                 </div>
                 
-                <div class="car-image col-md-6">
-                    <img class="" src="/assets/Camioneta@2x.jpg" alt="" width="720">
+                <div class="col-md-6 car-image-wrapper">
+                    <img width="720" class="car-image car-image--desktop" src="/assets/truck-image-full@2x.jpg" alt="">
+                    <img class="car-image car-image--mobile" src="/assets/truck-image-mobile@2x.jpg" alt="">
                 </div>
     
             </div>
@@ -165,37 +187,45 @@
     <!-- End: Beneficios -->
 
     <!-- Start: Solo se necesita -->
-    <div class="site-module necesita ">
+    <div class="site-module necesita px-3 jump-link" id="caracteristicas-credito">
 
         <div class="container">
 
-            <div class="row g-4 py-3 row-cols-1 text-center">
+            <div class="row g-4 py-3 row-cols-1">
                 <h2>Solo se necesita:</h2>
             </div>
             
-            <div class="row g-4 row-cols-1 row-cols-lg-3">
+            <div class="row g-4 px-3 row-cols-1 row-cols-lg-3">
               
-                <div class="need-list col text-center">
+                <div class="need-item col">
     
                     <span class="emoji">‍💳</span>
-                    <p class="body-xl">Identificación oficial vigente</p>
-                    <p class="body-lg">(INE, pasaporte o cédula profesional)</p>
+                    <div>
+                        <p class="body-xl">Identificación oficial vigente</p>
+                        <p class="body-lg">(INE, pasaporte o cédula profesional)</p>
+                    </div>
     
                 </div>
                 
-                <div class="need-list col text-center">
+                <div class="need-item col">
     
                     <span class="emoji">🏡</span>
-                    <p class="body-xl">Comprobante de domicilio</p>
-                    <p class="body-lg">(con máximo 3 meses de antigüedad)</p>
+                    <div>
+                        <p class="body-xl">Comprobante de domicilio</p>
+                        <p class="body-lg">(con máximo 3 meses de antigüedad)</p>
+                    </div>
+
     
                 </div>
                 
-                <div class="need-list col text-center">
+                <div class="need-item col">
     
                     <span class="emoji">💰</span>
-                    <p class="body-xl">Comprobante de ingresos</p>
-                    <p class="body-lg">(solo en caso de contar con uno)</p>
+                    <div>
+                        <p class="body-xl">Comprobante de ingresos</p>
+                        <p class="body-lg">(solo en caso de contar con uno)</p>
+                    </div>
+
     
                 </div>
             </div>
@@ -206,7 +236,7 @@
     <!-- End: Solo se necesita -->
 
     <!-- Start: ¿Cómo lo hacemos posible? -->
-    <div class="site-module hacemos-posible">
+    <div class="site-module hacemos-posible jump-link px-3" id="proceso">
 
         <div class="arrow-bg-overlay"></div>
 
@@ -218,7 +248,7 @@
                     <h2>¿Cómo lo hacemos posible?</h2>
                     <p class="body-lg">Nuestro proceso de crédito es tan simple que te lo contamos en 4 pasos:</p>
     
-                    <div class="carousel">
+                    <div class="carousel" id="process-carousel">
     
                         <div class="slide">
                             
@@ -275,6 +305,17 @@
     
                     </div>
     
+                    <div class="carousel-navigation">
+                        
+                        <a href="" onclick="prevSlide(e);" class="carousel-nav-button prev-button">
+                            <img src="/assets/chevron-prev.svg" alt="">
+                        </a>
+
+                        <a href="" onclick="nextSlide(e);" class="carousel-nav-button next-button">
+                            <img src="/assets/chevron-next.svg" alt="">
+                        </a>
+
+                    </div>
                 </div>
     
             </div>
@@ -285,13 +326,13 @@
     <!-- End: ¿Cómo lo hacemos posible? -->
 
     <!-- Start: Form Section -->
-    <div class="site-module form-section ">
+    <div class="site-module form-section px-3">
         <div class="form-overlay"></div>
 
         <div class="container">
             <div class="row align-items-flex-start">
 
-                <div class="col-lg-7 px-4 text-div">
+                <div class="col-lg-7 text-div">
 
                     <div class="text-wrapper">
                         <h1 class="headline-display-xl">Conviértete en socio Atria</h1>
@@ -335,8 +376,8 @@
                         <div class="form-group">
                           <label for="estado">Estado donde se encuentra tu agencia/lote</label> 
                           <div>
-                            <select id="estado" name="estado" class="custom-select" required="required">
-                              <option value="SLP">San Luis Potosi</option>
+                            <select id="estado" name="estado" class="form-control custom-select" required="required">
+                              <option disabled selected>Selecciona un estado</option>
                             </select>
                           </div>
                         </div> 
@@ -353,7 +394,7 @@
     <!-- End: Form Section -->
 
     <!-- Start: FAQs -->
-    <div class="site-module faqs">
+    <div class="site-module faqs px-3 jump-link" id="faq">
 
         <div class="container">
 
@@ -361,7 +402,7 @@
           
                 <div class="faq-content col-lg-8 offset-md-2">
     
-                    <h1 class=" text-center">Preguntas Frecuentes</h1>
+                    <h1 class="faq-headline">Preguntas Frecuentes</h1>
 
                     <div class="navigation-row">
 
@@ -519,11 +560,11 @@
     <!-- End: FAQs -->
 
     <!-- Start: Site Footer  -->
-    <div class="site-footer  px-4 py-5">
+    <div class="site-footer px-3 py-5">
 
         <div class="container-fluid">
 
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="row g-4 row-cols-1 row-cols-lg-3">
             
                 <div class="feature col-md-9">
                     <a class="footer-home-link" href="/">
@@ -561,7 +602,70 @@
 
     <!-- Fixed Footer -->
 
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
+    <script type="text/javascript">
+        
+        $('#process-carousel').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: false,
+                dots: false
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+            dots: false,
+            arrows: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+        });
+
+        function prevSlide(e) {
+            e.preventDefault();
+            $("#process-carousel").slick('SlickPrev');
+        }
+
+        function nextSlide(e) {
+            e.preventDefault();
+            $("#process-carousel").slick('SlickNext');
+        }
+
+
+    </script>
 
   </body>
 </html>
