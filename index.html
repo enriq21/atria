@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Atria</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./styles/stylesheet.css">
-    <link rel="stylesheet" type="text/css" href="./styles/slick.css">
+    
+    <link rel="stylesheet" type="text/css" href="/styles/slick.css">
+    <link rel="stylesheet" type="text/css" href="/styles/stylesheet.css">
 
-    
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   </head>
+  
   <body class="landing-page">
 
     <!-- Start: Header -->
     <nav class="site-header navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
             
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" id="main-nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <img src="/assets/menu-toggle.svg" alt="Toggle Mobile Menu">
                 </span>
@@ -42,21 +44,29 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link jump-link body-1 active" aria-current="page" href="#inicio">Inicio</a>
+                    <a class="nav-link main-nav-link body-1 active" aria-current="page" href="#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link jump-link body-1" href="#beneficios">Beneficios</a>
+                    <a class="nav-link main-nav-link body-1" href="#beneficios">Beneficios</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link jump-link body-1" href="#caracteristicas-credito">Características crédito</a>
+                    <a class="nav-link main-nav-link body-1" href="#caracteristicas-credito">Características crédito</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link jump-link body-1" href="#proceso">Proceso</a>
+                    <a class="nav-link main-nav-link body-1" href="#proceso">Proceso</a>
                     </li>
+                    <!-- <li class="nav-item" style="display:none;">
+                    <a class="nav-link body-1" href="#socio-form">Quiero sero socio Atria</a>
+                    </li> -->
                     <li class="nav-item">
-                    <a class="nav-link jump-link body-1" href="#faq">FAQs</a>
+                    <a class="nav-link main-nav-link body-1" href="#faq">FAQs</a>
                     </li>
                 </ul>
+
+                <a class="navbar-logo-wrap" href="#">
+                    <img src="/assets/logo.svg" alt="" width="117" height="32" class="d-inline-block align-text-top">
+                </a>
+
             </div>
 
             <div class="navbar-client-login">
@@ -69,7 +79,7 @@
                     <img class="whatsapp" src="/assets/icon-whatsapp.svg" alt="Cliente Atria">
                     Soy Cliente Atria</a>
 
-                <a class="client-login-mobile-button">
+                <a class="client-login-mobile-button header-phone-link">
                     <img class="whatsapp" src="/assets/icon-whatsapp-black.svg" alt="Whatsapp">
                 </a>
 
@@ -81,6 +91,7 @@
 
     <!-- Start: Beneficios -->
     <!-- Start: Hero -->
+    <span class="page-anchor" id="inicio"></span>
     <div class="page-hero container-fluid">
 
         <div class="container">
@@ -92,7 +103,9 @@
                 </div>
     
                 <div class="col-lg-7 phone-image">
-                    <img class="" src="/assets/Home-Atria 1.png" alt="" width="720">
+                    <a href="#" class="header-phone-link">
+                        <img class="" src="/assets/Home-Atria 1.png" alt="" width="720">
+                    </a>
                 </div>
             </div>
         </div>
@@ -100,44 +113,54 @@
     </div>
     <!-- End: Hero -->
 
-    <div class="sticky-footer">
-        <a class="sticky-footer__button headline-2" href="">Quiero ser socio Atria 👆</a>
+    <div class="sticky-footer" id="sticky-footer">
+        <a class="sticky-footer__button headline-2" href="#socio-form">Quiero ser socio Atria 👆</a>
     </div>
 
     <!-- Start: Nuestro Proposito -->
-    <div class="proposito px-4 jump-link" id="inicio">
+    <span class="page-anchor" id="beneficios"></span>
+    <div class="proposito px-4" >
 
         <div class="container proposito__headings">
-            <div class="col-md-6 offset-md-3">
-                <h2>Nuestro propósito:<br>Ser tu mejor aliado </h2>
-                <p class="body-lg">Sabemos que no todos tus clientes son iguales. Tenemos una solución diferenciada para cada uno de ellos</p>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <h2>Nuestro propósito:<br>Ser tu mejor aliado </h2>
+                    <p class="body-lg">Sabemos que no todos tus clientes son iguales. Tenemos una solución diferenciada para cada uno de ellos</p>
+                </div>
+            </div>
+            <div class="row site-module proposito__feature-row">
+            
+                <div class="feature col-sm-12 col-md-4 text-center">
+                    <div class="feature-wrap">
+                        <span class="emoji">✅</span> 
+                        <p class="subtitle-1">Créditos flexibles</p>
+                        <p class="body-1">Nos ahorramos las complicaciones para dar oportunidades a cualquier persona.</p>
+                    </div>
+    
+                </div>
+                
+                <div class="feature col-sm-12 col-md-4 text-center">
+                    <div class="feature-wrap">
+                        <span class="emoji">⚡️</span>
+                        <p class="subtitle-1">Experiencia completamente digital</p>
+                        <p class="body-1">Nuestra app Atria ayuda a dar seguimiento y autorizar cada crédito de forma fácil y segura.</p>
+                    </div>
+
+                </div>
+                
+                <div class="feature col-sm-12 col-md-4 text-center">
+                    <div class="feature-wrap">
+                        <span class="emoji">‍🎩</span>
+                        <p class="subtitle-1">AtriaAssist</p>
+                        <p class="body-1">Tu asistente personal que te acompaña a ti y tus clientes en cada paso hasta la entrega del auto.</p>
+                    </div>
+
+                </div>
+    
             </div>
         </div>
             
-        <div class="row site-module proposito__feature-row">
-            
-            <div class="feature col-xs-12 col-sm-4 text-center">
-                <span class="emoji">✅</span> 
-                <p class="subtitle-1">Créditos flexibles</p>
-                <p class="body-1">Nos ahorramos las complicaciones para dar oportunidades a cualquier persona.</p>
 
-            </div>
-            
-            <div class="feature  col-xs-12 col-sm-4 text-center">
-                <span class="emoji">⚡️</span>
-                <p class="subtitle-1">Experiencia completamente digital</p>
-                <p class="body-1">Nuestra app Atria ayuda a dar seguimiento y autorizar cada crédito de forma fácil y segura.</p>
-
-            </div>
-            
-            <div class="feature col-xs-12 col-sm-4 text-center">
-                <span class="emoji">‍🎩</span>
-                <p class="subtitle-1">AtriaAssist</p>
-                <p class="body-1">Tu asistente personal que te acompaña a ti y tus clientes en cada paso hasta la entrega del auto.</p>
-
-            </div>
-
-        </div>
 
     </div>
 
@@ -145,7 +168,7 @@
     <!-- End: Nuestro Proposito -->
 
     <!-- Start: Ofrecer un credito  -->
-    <div class="site-module ofrecer jump-link" id="beneficios">
+    <div class="site-module ofrecer">
 
         <div class="container">
 
@@ -187,7 +210,8 @@
     <!-- End: Beneficios -->
 
     <!-- Start: Solo se necesita -->
-    <div class="site-module necesita px-3 jump-link" id="caracteristicas-credito">
+    <span class="page-anchor" id="caracteristicas-credito"></span>
+    <div class="site-module necesita px-3" >
 
         <div class="container">
 
@@ -236,100 +260,112 @@
     <!-- End: Solo se necesita -->
 
     <!-- Start: ¿Cómo lo hacemos posible? -->
-    <div class="site-module hacemos-posible jump-link px-3" id="proceso">
+    <span class="page-anchor" id="proceso"></span>    
+    <div class="site-module hacemos-posible">
 
         <div class="arrow-bg-overlay"></div>
 
-        <div class="container carousel-container">
-            <div class="row g-4 py-5 row-cols-2s">
+        <div class="container-fluid">
+            <div class="row g-4 px-3 row-cols-2s">
     
-                <div class="col-lg-8 offset-lg-4">
+                <div class="col-sm-12 col-md-8 col-lg-9 offset-md-4 offset-lg-3">
     
                     <h2>¿Cómo lo hacemos posible?</h2>
                     <p class="body-lg">Nuestro proceso de crédito es tan simple que te lo contamos en 4 pasos:</p>
     
-                    <div class="carousel" id="process-carousel">
-    
-                        <div class="slide">
-                            
-                            <div class="title-row">
-                                <span class="headline-3">Cotización</span>
-                                <span class="slide-num display-txt">01</span>
-                            </div>
-                            
-                            <p class="body-2">Haz unas cuantas preguntas a tu cliente y ofrécele las condiciones del crédito.</p>
-                            
-                            <span class="subtitle-1 tag">🕐 En tan solo minutos</span>
-    
-                        </div>
-    
-                        <div class="slide">
-                            
-                            <div class="title-row">
-                                <span class="headline-3">Pre autorización</span>
-                                <span class="slide-num display-txt">02</span>
-                            </div>
-    
-                            <p class="body-2">No pierdas tiempo, conoce al instante si tu cliente es candidato al crédito.</p>
-                            
-                            <span class="subtitle-1 tag">🔥 Inmediato</span>
-    
-                        </div>
-    
-                        <div class="slide">
-                            
-                            <div class="title-row">
-                                <span class="headline-3">Documentación y Autorización</span>
-                                <span class="slide-num display-txt">03</span>
-                            </div>
-    
-                            <p class="body-2">Nuestros asesores darán acompañamiento al cliente para autorizar su crédito.</p>
-    
-                            <span class="subtitle-1 tag">⚡ Ágil y personalizado</span>
-    
-                        </div>
-    
-                        <div class="slide">
-    
-                            <div class="title-row">
-                                <span class="headline-3">Pago del auto</span>
-                                <span class="slide-num display-txt">04</span>
-                            </div>
-    
-                            <p class="body-2">¡Una vez firmado el contrato, te depositamos el mismo día!</p>
-    
-                            <span class="subtitle-1 tag">💰 Tu pago al instante</span>
-    
-                        </div>
-    
-    
-                    </div>
-    
-                    <div class="carousel-navigation">
-                        
-                        <a href="" onclick="prevSlide(e);" class="carousel-nav-button prev-button">
-                            <img src="/assets/chevron-prev.svg" alt="">
-                        </a>
 
-                        <a href="" onclick="nextSlide(e);" class="carousel-nav-button next-button">
-                            <img src="/assets/chevron-next.svg" alt="">
-                        </a>
+                    <div class="carousel-container">
 
-                    </div>
+                        <div class="carousel" id="process-carousel">
+                
+                            
+                            <div class="slide">
+                
+                                <div class="slide-wrap">
+                
+                                    <div class="title-row">
+                                        <span class="headline-3">Cotización</span>
+                                        <span class="slide-num display-txt">01</span>
+                                    </div>
+                                    
+                                    <p class="body-2">Haz unas cuantas preguntas a tu cliente y ofrécele las condiciones del crédito.</p>
+                                    
+                                    <span class="subtitle-1 tag">🕐 En tan solo minutos</span>
+                
+                                </div>
+                                
+                
+                
+                            </div>
+                
+                            <div class="slide">
+                
+                                <div class="slide-wrap">
+                
+                                    <div class="title-row">
+                                        <span class="headline-3">Pre autorización</span>
+                                        <span class="slide-num display-txt">02</span>
+                                    </div>
+                
+                                    <p class="body-2">No pierdas tiempo, conoce al instante si tu cliente es candidato al crédito.</p>
+                                    
+                                    <span class="subtitle-1 tag">🔥 Inmediato</span>
+                
+                                </div>                            
+                
+                            </div>
+                
+                            <div class="slide">
+                                <div class="slide-wrap">
+                                    <div class="title-row">
+                                        <span class="headline-3">Documentación y Autorización</span>
+                                        <span class="slide-num display-txt">03</span>
+                                    </div>
+                
+                                    <p class="body-2">Nuestros asesores darán acompañamiento al cliente para autorizar su crédito.</p>
+                
+                                    <span class="subtitle-1 tag">⚡ Ágil y personalizado</span>
+                                </div> 
+                            </div>
+                
+                            <div class="slide">
+                                <div class="slide-wrap">
+                                    <div class="title-row">
+                                        <span class="headline-3">Pago del auto</span>
+                                        <span class="slide-num display-txt">04</span>
+                                    </div>
+                
+                                    <p class="body-2">¡Una vez firmado el contrato, te depositamos el mismo día!</p>
+                
+                                    <span class="subtitle-1 tag">💰 Tu pago al instante</span>
+                                </div> 
+                            </div>
+                
+                
+                        </div>
+            
+                    </div>                    
+
+
                 </div>
     
             </div>
         </div>
 
 
+        
+
+
+
     </div>
     <!-- End: ¿Cómo lo hacemos posible? -->
 
     <!-- Start: Form Section -->
+    <span class="socio-anchor" id="socio-form"></span>    
     <div class="site-module form-section px-3">
         <div class="form-overlay"></div>
 
-        <div class="container">
+        <div class="container content-container">
             <div class="row align-items-flex-start">
 
                 <div class="col-lg-7 text-div">
@@ -394,7 +430,8 @@
     <!-- End: Form Section -->
 
     <!-- Start: FAQs -->
-    <div class="site-module faqs px-3 jump-link" id="faq">
+    <span class="page-anchor" id="faq"></span>    
+    <div class="site-module faqs px-3">
 
         <div class="container">
 
@@ -580,11 +617,10 @@
                             Miguel Hidalgo, C.P. 11000 CDMX.
                             +52 55 5418 9435
                         </p>
-
                         
-                        <p><strong>Aviso de Privacidad</strong></p>
+                        <p><strong> <a href="/aviso-de-privacidad.html">Aviso de Privacidad</a></strong></p>
                         
-                        <p><strong>Términos y condiciones</strong></p>
+                        <p><strong> <a href="/terminos-condiciones.html">Términos y condiciones</a></strong></p>
 
                     </div>
 
@@ -600,71 +636,150 @@
     <!-- End: Site Footer  -->
 
 
+    <div class="client-login-footer hide" id="client-login-footer">
+
+        <div class="button-wrap">
+            <a class="client-login-footer__button headline-2 client-button" href="#">Soy cliente Atria</a>
+        </div>
+
+        <div class="button-wrap">
+            <a class="client-login-footer__button headline-2 socio-button" href="#">Soy socio Atria</a>
+        </div>
+
+        
+    </div>
+
     <!-- Fixed Footer -->
 
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+ 
 
 
+
+    <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
 
     <script type="text/javascript">
+
+        var stickyFooter = document.getElementById('sticky-footer');
+        var socioForm = document.getElementById('socio-form');
+        var bounding = socioForm.getBoundingClientRect();
+
+        var isInViewport = function (elem) {
+            var bounding = elem.getBoundingClientRect();
+            return (
+                bounding.top >= 0 &&
+                bounding.left >= 0 &&
+                bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        };        
         
-        $('#process-carousel').slick({
-        dots: false,
-        arrows: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        responsive: [
-            {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
+        $(document).ready(function () {
+
+            // Main Nav Toggle
+            $("#main-nav-toggle").click(function(e) {
+                e.preventDefault;
+                $(".navbar-brand").toggleClass("hide");
+                $(".client-login-mobile-button").toggleClass("hide");
+                $("#sticky-footer").addClass("hide");
+                $("#client-login-footer").addClass("hide");
+            })
+            
+            // Mobile Footer Buttons Toggle
+            $(".header-phone-link").click(function(e) {
+                e.preventDefault;
+                $('.navbar-collapse').collapse('hide');
+                $(".navbar-brand").removeClass("hide");
+                $("#client-login-footer").toggleClass("hide");
+            })
+            
+
+            // Carousel
+            $('#process-carousel').slick({
+                dots: false,
+                arrows: true,
                 infinite: false,
-                dots: false
-            }
-            },
-            {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-            },
-            {
-            breakpoint: 480,
-            settings: {
-            dots: false,
-            arrows: false,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
+                variableWidth: true,
+                speed: 300,
+                focusOnSelect: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                    breakpoint: 991,
+                        settings: {
+                        centerMode: true,
+                        swipe:true,
+                        swipeToSlide:true,
+                        dots: false,
+                        arrows: true,
+                        variableWidth: true,
+                        infinite: false,
+                        speed: 300,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+            
+            $(".prev-button").click(function(e) {
+                e.preventDefault;
+                $("#process-carousel").slick('slickPrev');
+            })
+
+            $(".next-button").click(function(e) {
+                e.preventDefault;
+                // console.log("But it worked though");
+                $("#process-carousel").slick('slickNext');
+            })
+
+            $('.main-nav-link').click(function(e) {
+                // $(".navbar-brand").addClass("show");
+                $(".navbar-brand").removeClass("hide");
+                $(".client-login-mobile-button").removeClass("hide");
+                $('.navbar-collapse').collapse('hide');
+                $('.main-nav-link.active').removeClass('active');
+                $(this).addClass('active');
+            })
+
+            // Scroll Function
+            $(window).scroll(function(e){ 
+
+                var scrollDistance = $(window).scrollTop();    
+
+                if (isInViewport(socioForm)) {
+                    // console.log(bounding);
+                    $("#sticky-footer").addClass("hide");
+                } else {
+                    $("#sticky-footer").removeClass("hide");
+                }
+
+
+
+                // Assign active class to nav links while scolling
+                $('.page-anchor').each(function(i) {
+                    // console.log("sd" + scrollDistance);
+                    // console.log($(this).position().top - 200);
+                    if ($(this).position().top - 200 <= scrollDistance) {
+                        $('.main-nav-link.active').removeClass('active');
+                        $('.main-nav-link').eq(i).addClass('active');
+                    }
+                });
+
+
+            });
+
+
+
+
         });
 
-        function prevSlide(e) {
-            e.preventDefault();
-            $("#process-carousel").slick('SlickPrev');
-        }
 
-        function nextSlide(e) {
-            e.preventDefault();
-            $("#process-carousel").slick('SlickNext');
-        }
-
-
+        
     </script>
 
   </body>
