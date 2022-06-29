@@ -1152,10 +1152,12 @@ label, .label {
   border-radius: 12px;
   font-weight: 600;
 }
-.form-section .btn-primary:hover {
-  color: #AB6BF1;
-  background-color: #F0D3FF;
-  border-color: #F0D3FF;
+@media only screen and (min-width: 992px) {
+  .form-section .btn-primary:hover {
+    color: #AB6BF1;
+    background-color: #F0D3FF;
+    border-color: #F0D3FF;
+  }
 }
 
 .faqs {
