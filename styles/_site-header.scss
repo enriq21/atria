@@ -109,9 +109,13 @@
                 border-radius:12px;
                 margin-right:16px;
     
-                &:hover {
-                    background-color:#F0D3FF;
+                @media only screen and (min-width:992px) {
+                    &:hover {
+                        background-color:#F0D3FF;
+                    }
+    
                 }
+
 
                 &::last-child {
                     margin-right:0

@@ -43,9 +43,11 @@
     transition:all .3s ease-in-out;
     max-height:72px;
 
-    &:hover {
-        background-color:#F0D3FF;
-    }
+        @media only screen and (min-width:992px) {
+            &:hover {
+                background-color:#F0D3FF;
+            }
+        }
 
     &.hide {
         bottom:-72px;
