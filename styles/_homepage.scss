@@ -593,11 +593,15 @@
                background-color: #F7F7F8;     
                color:#323232;
                
-               &:hover {
+
+               @media only screen and (min-width:992px) {
+                    &:hover {
                     
-                    background:#A5A5A5 !important;
-                    color:#323232  !important;
+                         background:#A5A5A5 !important;
+                         color:#323232  !important;
+                    }
                }
+
 
           }
 

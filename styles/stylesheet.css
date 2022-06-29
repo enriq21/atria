@@ -1210,9 +1210,11 @@ label, .label {
   background-color: #F7F7F8;
   color: #323232;
 }
-.faqs .navigation-row .nav-link:hover {
-  background: #A5A5A5 !important;
-  color: #323232 !important;
+@media only screen and (min-width: 992px) {
+  .faqs .navigation-row .nav-link:hover {
+    background: #A5A5A5 !important;
+    color: #323232 !important;
+  }
 }
 .faqs .navigation-row .nav-pills .nav-link.active, .faqs .navigation-row .nav-pills .show > .nav-link {
   background-color: #323232;
