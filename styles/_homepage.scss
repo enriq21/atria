@@ -245,7 +245,7 @@
      background: linear-gradient(180deg, #FFFFFF 27.58%, #F4F0FB 79.51%);
      overflow:hidden;
 
-     @media only screen and (max-width:992px) {
+     @media only screen and (max-width:991px) {
           padding-top:95px;;
      }
 
@@ -383,9 +383,12 @@
                border:#783DBE 1px solid;
                background-repeat:no-repeat;
 
-               &:hover {
-                    background-color:#AB6BF1;
-                    border-color:#AB6BF1;
+               @media only screen and (min-width:992px) {
+                    &:hover {
+                         background-color:#AB6BF1;
+                         border-color:#AB6BF1;
+
+                    }
                }
 
                &.slick-disabled {

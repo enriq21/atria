@@ -868,7 +868,7 @@ label, .label {
   background: linear-gradient(180deg, #FFFFFF 27.58%, #F4F0FB 79.51%);
   overflow: hidden;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .hacemos-posible {
     padding-top: 95px;
   }
@@ -1001,9 +1001,11 @@ label, .label {
   border: #783DBE 1px solid;
   background-repeat: no-repeat;
 }
-.hacemos-posible #process-carousel .slick-arrow:hover {
-  background-color: #AB6BF1;
-  border-color: #AB6BF1;
+@media only screen and (min-width: 992px) {
+  .hacemos-posible #process-carousel .slick-arrow:hover {
+    background-color: #AB6BF1;
+    border-color: #AB6BF1;
+  }
 }
 .hacemos-posible #process-carousel .slick-arrow.slick-disabled {
   background-color: #7C7C7C;
