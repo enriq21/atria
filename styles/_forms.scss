@@ -9,12 +9,24 @@ select {
             height:unset;
         }
     }
+
+    &:focus,
+    &:active {
+        border: 1px solid #AB6BF1;
+        outline:none !important;
+        box-sizing:none;
+    }
 }
 
+
+select {
+    background-image: url('../assets/chevron-down.svg');
+    background-repeat:no-repeat;
+    background-position: calc(100% - 10px) center;
+}
 .form-group {
-    @media only screen and (min-width:768px) {
-        margin-bottom:1rem;
-    }
+    margin-bottom:1rem;
+    
     label {
         padding:0 16px;
         font-size:12px;

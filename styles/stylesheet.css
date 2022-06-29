@@ -167,11 +167,23 @@ select.form-control {
     height: unset;
   }
 }
+input[type=text]:focus, input[type=text]:active,
+select:focus,
+select:active {
+  border: 1px solid #AB6BF1;
+  outline: none !important;
+  -webkit-box-sizing: none;
+          box-sizing: none;
+}
 
-@media only screen and (min-width: 768px) {
-  .form-group {
-    margin-bottom: 1rem;
-  }
+select {
+  background-image: url("../assets/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
 }
 .form-group label {
   padding: 0 16px;
@@ -212,16 +224,37 @@ label, .label {
 .site-header .container-fluid {
   max-width: 1500px !important;
 }
+@media only screen and (max-width: 991px) {
+  .site-header .container-fluid {
+    padding: 0;
+  }
+}
 .site-header .navbar-toggler {
-  height: 44px;
-  width: 44px;
+  height: 48px;
+  width: 48px;
   padding: 0;
+}
+.site-header .navbar-toggler .is-closed {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.site-header .navbar-toggler .is-open {
+  display: none;
+}
+.site-header .navbar-toggler.collapsed .is-closed {
+  display: none !important;
+}
+.site-header .navbar-toggler.collapsed .is-open {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 .site-header .navbar-toggler:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .site-header .navbar-brand {
     margin-right: 40px;
   }
@@ -232,11 +265,14 @@ label, .label {
 @media only screen and (max-width: 767px) {
   .site-header .navbar-nav .nav-item {
     border-bottom: 1px solid #A5A5A5;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 @media only screen and (min-width: 768px) {
+  .site-header .navbar-nav .nav-item {
+    margin-right: 16px;
+  }
   .site-header .navbar-nav .nav-item .nav-link {
     height: 100%;
     width: 100%;
@@ -246,9 +282,11 @@ label, .label {
     margin-right: 0;
   }
 }
-.site-header .navbar-nav .nav-item .main-nav-link.active {
-  font-weight: bold;
-  text-decoration: underline;
+@media only screen and (min-width: 768px) {
+  .site-header .navbar-nav .nav-item .main-nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
 }
 .site-header .navbar-nav .nav-item a {
   color: #000;
@@ -265,7 +303,7 @@ label, .label {
 .site-header .navbar-client-login .client-login-button {
   display: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .site-header .navbar-client-login .client-login-button {
     padding: 4px 16px;
     display: -webkit-box;
@@ -280,11 +318,11 @@ label, .label {
     border-radius: 12px;
     margin-right: 16px;
   }
+  .site-header .navbar-client-login .client-login-button:hover {
+    background-color: #F0D3FF;
+  }
   .site-header .navbar-client-login .client-login-button::last-child {
     margin-right: 0;
-  }
-  .site-header .navbar-client-login .client-login-button:hover {
-    text-decoration: underline;
   }
   .site-header .navbar-client-login .client-login-button .whatsapp {
     margin-right: 4px;
@@ -315,9 +353,14 @@ label, .label {
   width: 32px;
   height: 32px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .site-header .navbar-client-login .client-login-mobile-button {
     display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .site-header .navbar-logo-wrap {
+    display: none !important;
   }
 }
 
@@ -352,7 +395,8 @@ label, .label {
     padding-bottom: 15px;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(60.76%, #F4F0FB), color-stop(80.18%, #ffffff));
+    background: linear-gradient(180deg, #FFFFFF 0%, #F4F0FB 60.76%, #ffffff 80.18% #FFFFFF 100%);
   }
 
   .navbar-collapse.collapsing {
@@ -372,6 +416,9 @@ label, .label {
     transition: left 300ms ease-in-out;
   }
 
+  .nav-item {
+    margin: 0 20px;
+  }
   .nav-item a {
     padding: 32px 0;
   }
@@ -429,6 +476,9 @@ label, .label {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   max-height: 72px;
+}
+.sticky-footer:hover {
+  background-color: #F0D3FF;
 }
 .sticky-footer.hide {
   bottom: -72px;
@@ -494,9 +544,26 @@ label, .label {
     display: none;
   }
 }
+.client-login-footer .footer-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #323232;
+  opacity: 0.6;
+  bottom: 143px;
+  left: 0;
+  z-index: 900;
+  pointer-events: none;
+}
 .client-login-footer.hide {
   bottom: -144px;
   max-height: 0;
+  display: none !important;
+  pointer-events: none;
+}
+.client-login-footer__buttons {
+  z-index: 1000;
+  color: #fff;
 }
 @media only screen and (max-width: 767px) {
   .client-login-footer {
@@ -542,14 +609,14 @@ label, .label {
 .page-hero {
   overflow: hidden;
   background-image: url(/assets/atria-logo-bg-vector.svg);
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #F9F7FD;
   margin-bottom: 95px;
   margin-top: 60px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .page-hero {
     margin-bottom: 60px;
   }
@@ -562,7 +629,7 @@ label, .label {
     width: 465px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .page-hero .cta-text-section {
     margin-top: 32px;
   }
@@ -635,7 +702,6 @@ label, .label {
 }
 .proposito__feature-row .feature .emoji {
   font-size: 40px;
-  margin-bottom: 1.5rem;
 }
 .proposito__feature-row .feature .subtitle-1 {
   margin-top: 1rem;
@@ -652,6 +718,9 @@ label, .label {
   }
 }
 
+.ofrecer .section-heading {
+  margin-bottom: 24px;
+}
 .ofrecer .text-wrapper {
   max-width: 450px;
 }
@@ -689,7 +758,7 @@ label, .label {
   padding-left: 32px;
   padding-right: 0;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .ofrecer .car-image-wrapper {
     overflow: hidden;
   }
@@ -712,7 +781,7 @@ label, .label {
     display: none;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .ofrecer .car-image-wrapper .car-image--desktop {
     display: none;
   }
@@ -791,7 +860,7 @@ label, .label {
   background: linear-gradient(180deg, #FFFFFF 27.58%, #F4F0FB 79.51%);
   overflow: hidden;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .hacemos-posible {
     padding-top: 95px;
   }
@@ -806,7 +875,7 @@ label, .label {
   background-repeat: no-repeat;
   background-position: left bottom;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .hacemos-posible .arrow-bg-overlay {
     background-image: url(../assets/step-slider-bg-logo.svg);
     background-size: cover;
@@ -827,7 +896,7 @@ label, .label {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .hacemos-posible .carousel {
     margin-top: 4rem;
   }
@@ -836,6 +905,11 @@ label, .label {
   margin-right: 1rem;
 }
 @media only screen and (max-width: 767px) {
+  .hacemos-posible .carousel .slide {
+    max-width: 272px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .hacemos-posible .carousel .slide {
     max-width: 340px !important;
   }
@@ -864,7 +938,7 @@ label, .label {
   padding: 40px 32px 32px;
   border-radius: 12px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .hacemos-posible .carousel .slide .slide-wrap {
     height: 275px;
   }
@@ -916,6 +990,10 @@ label, .label {
   border: #783DBE 1px solid;
   background-repeat: no-repeat;
 }
+.hacemos-posible #process-carousel .slick-arrow:hover {
+  background-color: #AB6BF1;
+  border-color: #AB6BF1;
+}
 .hacemos-posible #process-carousel .slick-arrow.slick-disabled {
   background-color: #7C7C7C;
   border: #7C7C7C 1px solid;
@@ -938,6 +1016,11 @@ label, .label {
     left: 586px;
   }
 }
+@media only screen and (min-width: 1550px) {
+  .hacemos-posible #process-carousel .slick-prev {
+    left: 936px;
+  }
+}
 .hacemos-posible #process-carousel .slick-next {
   background-image: url(../assets/chevron-next.svg);
   background-position: center center;
@@ -950,6 +1033,11 @@ label, .label {
 @media only screen and (min-width: 1200px) {
   .hacemos-posible #process-carousel .slick-next {
     left: 650px;
+  }
+}
+@media only screen and (min-width: 1550px) {
+  .hacemos-posible #process-carousel .slick-next {
+    left: 1000px;
   }
 }
 .hacemos-posible .carousel-navigation {
@@ -1005,7 +1093,7 @@ label, .label {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .form-section {
     padding-top: 78px;
     padding-bottom: 72px;
@@ -1026,15 +1114,15 @@ label, .label {
 .form-section .text-wrapper .headline-display-xl {
   line-height: 60px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .form-section .text-wrapper {
     width: 294px;
   }
 }
 @media only screen and (min-width: 768px) {
   .form-section .text-wrapper {
-    max-width: 368px;
-    width: 368px;
+    max-width: 440px;
+    width: 440px;
   }
 }
 .form-section .headline-display-xl {
@@ -1047,21 +1135,22 @@ label, .label {
 .form-section .btn-primary {
   font-family: "Lato", sans-serif;
   margin-top: 32px;
-  background-color: #AB6BF1;
-  border-color: #AB6BF1;
+  background-color: #783DBE;
+  border-color: #783DBE;
   padding: 16px 24px;
   border-radius: 12px;
   font-weight: 600;
 }
 .form-section .btn-primary:hover {
-  background-color: #9747FF;
-  border-color: #9747FF;
+  color: #AB6BF1;
+  background-color: #F0D3FF;
+  border-color: #F0D3FF;
 }
 
 .faqs {
   margin-top: 95px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 992px) {
   .faqs .faq-headline {
     max-width: 75%;
   }
@@ -1110,8 +1199,12 @@ label, .label {
   background-color: #F7F7F8;
   color: #323232;
 }
+.faqs .navigation-row .nav-link:hover {
+  background: #A5A5A5 !important;
+  color: #323232 !important;
+}
 .faqs .navigation-row .nav-pills .nav-link.active, .faqs .navigation-row .nav-pills .show > .nav-link {
-  background-color: #000000;
+  background-color: #323232;
   color: #fff;
 }
 .faqs .accordion {

@@ -4,39 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <title>Atria</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
-    <link rel="stylesheet" type="text/css" href="/styles/slick.css">
-    <link rel="stylesheet" type="text/css" href="/styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="styles/slick.css">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="assets/jquery.js" type="text/javascript"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+
   </head>
-  
   <body class="landing-page">
 
     <!-- Start: Header -->
     <nav class="site-header navbar navbar-expand-lg bg-white">
         <div class="container-fluid">
             
-            <button class="navbar-toggler" id="main-nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <img src="/assets/menu-toggle.svg" alt="Toggle Mobile Menu">
-                </span>
+            <button class="navbar-toggler collapsed" id="main-nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="is-open" src="assets/menu-toggle-full.svg" alt="Toggle Mobile Menu">    
+                    <img class="is-closed" src="assets/menu-toggle-half.svg" alt="Toggle Mobile Menu">
             </button>
 
             <a class="navbar-brand" href="#">
-                <img src="/assets/logo.svg" alt="" width="117" height="32" class="d-inline-block align-text-top">
+                <img src="assets/logo.svg" alt="" width="117" height="32" class="d-inline-block align-text-top">
             </a>
 
 
@@ -55,32 +53,29 @@
                     <li class="nav-item">
                     <a class="nav-link main-nav-link body-1" href="#proceso">Proceso</a>
                     </li>
-                    <!-- <li class="nav-item" style="display:none;">
-                    <a class="nav-link body-1" href="#socio-form">Quiero sero socio Atria</a>
-                    </li> -->
                     <li class="nav-item">
                     <a class="nav-link main-nav-link body-1" href="#faq">FAQs</a>
                     </li>
                 </ul>
 
                 <a class="navbar-logo-wrap" href="#">
-                    <img src="/assets/logo.svg" alt="" width="117" height="32" class="d-inline-block align-text-top">
+                    <img src="assets/logo.svg" alt="" width="117" height="32" class="d-inline-block align-text-top">
                 </a>
 
             </div>
 
             <div class="navbar-client-login">
 
-                <a class="client-login-button subtitle-2" href="#">
-                    <img class="whatsapp" src="/assets/icon-whatsapp.svg" alt="Socio Atria">
+                <a class="client-login-button subtitle-2" href="https://api.whatsapp.com/send/?phone=%2B525554189435&text&type=phone_number&app_absent=0">
+                    <img class="whatsapp" src="assets/icon-whatsapp.svg" alt="Socio Atria">
                     Soy Socio Atria</a>
 
-                <a class="client-login-button subtitle-2" href="#">
-                    <img class="whatsapp" src="/assets/icon-whatsapp.svg" alt="Cliente Atria">
+                <a class="client-login-button subtitle-2" href="https://api.whatsapp.com/send/?phone=%2B525554189435&text&type=phone_number&app_absent=0">
+                    <img class="whatsapp" src="assets/icon-whatsapp.svg" alt="Cliente Atria">
                     Soy Cliente Atria</a>
 
                 <a class="client-login-mobile-button header-phone-link">
-                    <img class="whatsapp" src="/assets/icon-whatsapp-black.svg" alt="Whatsapp">
+                    <img class="whatsapp" src="assets/icon-whatsapp-black.svg" alt="Whatsapp">
                 </a>
 
 
@@ -103,9 +98,7 @@
                 </div>
     
                 <div class="col-lg-7 phone-image">
-                    <a href="#" class="header-phone-link">
-                        <img class="" src="/assets/Home-Atria 1.png" alt="" width="720">
-                    </a>
+                    <img class="" src="assets/Home-Atria 1.png" alt="" width="720">
                 </div>
             </div>
         </div>
@@ -178,16 +171,16 @@
 
                     <div class="text-wrapper">
 
-                        <h2>Ofrecer un crédito nunca <br>fue tan fácil</h2>
-                        <P class="body-lg">¡Adiós complicaciones y letras chiquitas! 😎 Con Atria, tus clientes tienen la oportunidad de adquirir el Auto que les cambiará la vida</P>
+                        <h2 class="section-heading">Ofrecer un crédito nunca <br>fue tan fácil</h2>
+                        <P class="body-lg">¡Adiós complicaciones y letras chiquitas! 😎 Con Atria, tus clientes tienen la oportunidad de adquirir el auto que les cambiará la vida</P>
         
                         <ul class="ofrecer__list">
-                            <li><span class="purple-check"><img width="24" height="24" src="/assets/purple-checkbox.svg" alt=""></span><span class="body-1">Sin comprobar ingresos forzosamente</span></li>
-                            <li><span class="purple-check"><img width="24" height="24" src="/assets/purple-checkbox.svg" alt=""></span><span class="body-1">Sin necesidad de contar con historial crediticio</span></li>
-                            <li><span class="purple-check"><img width="24" height="24" src="/assets/purple-checkbox.svg" alt=""></span><span class="body-1">Plazos de hasta 60 meses</span></li>
-                            <li><span class="purple-check"><img width="24" height="24" src="/assets/purple-checkbox.svg" alt=""></span><span class="body-1">Enganche desde el 20%</span></li>
-                            <li><span class="purple-check"><img width="24" height="24" src="/assets/purple-checkbox.svg" alt=""></span><span class="body-1">Autos Seminuevos con hasta 10 años de antigüedad</span></li>
-                            <li><span class="purple-check"><img width="24" height="24" src="/assets/purple-checkbox.svg" alt=""></span><span class="body-1">Aceptamos comportamiento irregular en buró</span></li>
+                            <li><span class="purple-check"><img width="24" height="24" src="assets/purple-checkbox.svg" alt=""></span><span class="body-1">Sin comprobar ingresos forzosamente</span></li>
+                            <li><span class="purple-check"><img width="24" height="24" src="assets/purple-checkbox.svg" alt=""></span><span class="body-1">Sin necesidad de contar con historial crediticio</span></li>
+                            <li><span class="purple-check"><img width="24" height="24" src="assets/purple-checkbox.svg" alt=""></span><span class="body-1">Plazos de hasta 60 meses</span></li>
+                            <li><span class="purple-check"><img width="24" height="24" src="assets/purple-checkbox.svg" alt=""></span><span class="body-1">Enganche desde el 20%</span></li>
+                            <li><span class="purple-check"><img width="24" height="24" src="assets/purple-checkbox.svg" alt=""></span><span class="body-1">Autos Seminuevos con hasta 10 años<br>de antigüedad</span></li>
+                            <li><span class="purple-check"><img width="24" height="24" src="assets/purple-checkbox.svg" alt=""></span><span class="body-1">Aceptamos comportamiento irregular en buró</span></li>
                         </ul>
 
                     </div>
@@ -195,8 +188,8 @@
                 </div>
                 
                 <div class="col-md-6 car-image-wrapper">
-                    <img width="720" class="car-image car-image--desktop" src="/assets/truck-image-full@2x.jpg" alt="">
-                    <img class="car-image car-image--mobile" src="/assets/truck-image-mobile@2x.jpg" alt="">
+                    <img width="720" class="car-image car-image--desktop" src="assets/truck-image-full@2x.jpg" alt="">
+                    <img class="car-image car-image--mobile" src="assets/truck-image-mobile@2x.jpg" alt="">
                 </div>
     
             </div>
@@ -226,7 +219,7 @@
                     <span class="emoji">‍💳</span>
                     <div>
                         <p class="body-xl">Identificación oficial vigente</p>
-                        <p class="body-lg">(INE, pasaporte o cédula profesional)</p>
+                        <p class="body-1">(INE, pasaporte o cédula profesional)</p>
                     </div>
     
                 </div>
@@ -236,7 +229,7 @@
                     <span class="emoji">🏡</span>
                     <div>
                         <p class="body-xl">Comprobante de domicilio</p>
-                        <p class="body-lg">(con máximo 3 meses de antigüedad)</p>
+                        <p class="body-1">(con máximo 3 meses de antigüedad)</p>
                     </div>
 
     
@@ -247,7 +240,7 @@
                     <span class="emoji">💰</span>
                     <div>
                         <p class="body-xl">Comprobante de ingresos</p>
-                        <p class="body-lg">(solo en caso de contar con uno)</p>
+                        <p class="body-1">(solo en caso de contar con uno)</p>
                     </div>
 
     
@@ -318,11 +311,11 @@
                             <div class="slide">
                                 <div class="slide-wrap">
                                     <div class="title-row">
-                                        <span class="headline-3">Documentación y Autorización</span>
+                                        <span class="headline-3">Documentación <br>y Autorización</span>
                                         <span class="slide-num display-txt">03</span>
                                     </div>
                 
-                                    <p class="body-2">Nuestros asesores darán acompañamiento al cliente para autorizar su crédito.</p>
+                                    <p class="body-2">Nuestros asesores darán acompañamiento<br>al cliente para autorizar su crédito.</p>
                 
                                     <span class="subtitle-1 tag">⚡ Ágil y personalizado</span>
                                 </div> 
@@ -379,18 +372,18 @@
     
                 <div class="col-lg-5 form-div">
                     
-                    <form>
+                    <form id="socio" action="https://api.eleve.com/landing/send-formulario-web" method="POST">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="nombre">Nombre</label> 
-                                    <input id="nombre" name="nombre" placeholder="Escribe el nombre" type="text" required="required" class="form-control">
+                                    <input id="form_nombre" name="nombre" placeholder="Escribe el nombre" type="text" required="required" class="form-control">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="apellido">Apellido</label> 
-                                    <input id="apellido" name="apellido" placeholder="Escribe el apellido" type="text" required="required" class="form-control">
+                                    <input id="form_apellido" name="apellido" placeholder="Escribe el apellido" type="text" required="required" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -398,27 +391,59 @@
 
                         <div class="form-group">
                           <label for="email">Correo electrónico (opcional)</label> 
-                          <input id="email" name="email" placeholder="Escribe el correo electrónico" type="text" class="form-control">
+                          <input id="form_email" name="form_email" placeholder="Escribe el correo electrónico" type="text" class="form-control">
                         </div>
                         <div class="form-group">
                           <label for="telefono">Teléfono</label> 
-                          <input id="telefono" name="telefono" placeholder="Escribe el teléfono" type="text" required="required" class="form-control">
+                          <input id="form_telefono" name="form_telefono" placeholder="Escribe el teléfono" type="text" required="required" class="form-control">
                         </div>
                         <div class="form-group">
                           <label for="agencia">Nombre de tu agencia/lote (opcional)</label> 
-                          <input id="agencia" name="agencia" placeholder="Escribe el nombre de tu agencia/lote" type="text" class="form-control">
+                          <input id="form_agencia" name="form_agencia" placeholder="Escribe el nombre de tu agencia/lote" type="text" class="form-control">
                         </div>
     
                         <div class="form-group">
-                          <label for="estado">Estado donde se encuentra tu agencia/lote</label> 
+                          <label for="form_estado">Estado donde se encuentra tu agencia/lote</label> 
                           <div>
-                            <select id="estado" name="estado" class="form-control custom-select" required="required">
+                            <select id="form_estado" name="estado" class="form-control custom-select" required="required">
                               <option disabled selected>Selecciona un estado</option>
+                                <option value="DIF">Distrito Federal</option>
+                                <option value="AGS">Aguascalientes</option>
+                                <option value="BCN">Baja California</option>
+                                <option value="BCS">Baja California Sur</option>
+                                <option value="CAM">Campeche</option>
+                                <option value="CHP">Chiapas</option>
+                                <option value="CHI">Chihuahua</option>
+                                <option value="COA">Coahuila</option>
+                                <option value="COL">Colima</option>
+                                <option value="DUR">Durango</option>
+                                <option value="GTO">Guanajuato</option>
+                                <option value="GRO">Guerrero</option>
+                                <option value="HGO">Hidalgo</option>
+                                <option value="JAL">Jalisco</option>
+                                <option value="MEX">M&eacute;xico</option>
+                                <option value="MIC">Michoac&aacute;n</option>
+                                <option value="MOR">Morelos</option>
+                                <option value="NAY">Nayarit</option>
+                                <option value="NLE">Nuevo Le&oacute;n</option>
+                                <option value="OAX">Oaxaca</option>
+                                <option value="PUE">Puebla</option>
+                                <option value="QRO">Quer&eacute;taro</option>
+                                <option value="ROO">Quintana Roo</option>
+                                <option value="SLP">San Luis Potos&iacute;</option>
+                                <option value="SIN">Sinaloa</option>
+                                <option value="SON">Sonora</option>
+                                <option value="TAB">Tabasco</option>
+                                <option value="TAM">Tamaulipas</option>
+                                <option value="TLX">Tlaxcala</option>
+                                <option value="VER">Veracruz</option>
+                                <option value="YUC">Yucat&aacute;n</option>
+                                <option value="ZAC">Zacatecas</option>
                             </select>
                           </div>
                         </div> 
                         <div class="form-group">
-                          <button name="submit" type="submit" class="btn btn-primary">Quiero ser socio Atria</button>
+                          <button name="submit" id="form_submit" type="submit" class="btn btn-primary">Quiero ser socio Atria</button>
                         </div>
                     </form>   
     
@@ -437,7 +462,7 @@
 
             <div class="row">
           
-                <div class="faq-content col-lg-8 offset-md-2">
+                <div class="faq-content col-lg-8 offset-lg-2">
     
                     <h1 class="faq-headline">Preguntas Frecuentes</h1>
 
@@ -605,7 +630,7 @@
             
                 <div class="feature col-md-9">
                     <a class="footer-home-link" href="/">
-                        <img src="/assets/logo-white.svg" alt="" width="146" height="40" class="d-inline-block align-text-top">
+                        <img src="assets/logo-white.svg" alt="" width="146" height="40" class="d-inline-block align-text-top">
                     </a>                    
                 </div>
                 
@@ -613,14 +638,12 @@
                     <div class="address-wrap">
                         <p class="body-2">
                             <span class="subtitle-1">Contáctanos</span> <br>
-                            Av. de las Palmas 100, Lomas de Chapultepec,
-                            Miguel Hidalgo, C.P. 11000 CDMX.
-                            +52 55 5418 9435
+                            <a href="tel:+525554189435" style="text-decoration:none;">+52 55 5418 9435</a> 
                         </p>
                         
-                        <p><strong> <a href="/aviso-de-privacidad.html">Aviso de Privacidad</a></strong></p>
+                        <p><strong> <a href="aviso-de-privacidad.html">Aviso de Privacidad</a></strong></p>
                         
-                        <p><strong> <a href="/terminos-condiciones.html">Términos y condiciones</a></strong></p>
+                        <p><strong> <a href="terminos-condiciones.html">Términos y condiciones</a></strong></p>
 
                     </div>
 
@@ -638,13 +661,18 @@
 
     <div class="client-login-footer hide" id="client-login-footer">
 
-        <div class="button-wrap">
-            <a class="client-login-footer__button headline-2 client-button" href="#">Soy cliente Atria</a>
-        </div>
+        <div class="footer-overlay"></div>
 
-        <div class="button-wrap">
-            <a class="client-login-footer__button headline-2 socio-button" href="#">Soy socio Atria</a>
+        <div class="client-login-footer__buttons">
+            <div class="button-wrap">
+                <a class="client-login-footer__button headline-2 client-button" href="https://api.whatsapp.com/send/?phone=%2B525554189435&text&type=phone_number&app_absent=0">Soy cliente Atria</a>
+            </div>
+    
+            <div class="button-wrap">
+                <a class="client-login-footer__button headline-2 socio-button" href="https://api.whatsapp.com/send/?phone=%2B525554189435&text&type=phone_number&app_absent=0">Soy socio Atria</a>
+            </div>
         </div>
+        
 
         
     </div>
@@ -652,30 +680,54 @@
     <!-- Fixed Footer -->
 
 
- 
 
-
-
-    <!-- <script type="text/javascript" src="slick/slick.min.js"></script> -->
-
+    <!-- Page Scripts -->
     <script type="text/javascript">
 
         var stickyFooter = document.getElementById('sticky-footer');
         var socioForm = document.getElementById('socio-form');
         var bounding = socioForm.getBoundingClientRect();
 
+        var form_nombre = document.getElementById("form_nombre");
+        var form_apellido = document.getElementById("form_apellido");
+        var form_email = document.getElementById("form_email");
+        var form_telefono = document.getElementById("form_telefono");
+        var form_agencia = document.getElementById("form_agencia");
+        var form_estado = document.getElementById("form_estado");
+
+        // const form = document.getElementById('socio-form');
+        // const formData = new FormData(form);
+
         var isInViewport = function (elem) {
             var bounding = elem.getBoundingClientRect();
+
             return (
-                bounding.top >= 0 &&
+                (bounding.top + 1600) >= -(window.innerHeight || document.documentElement.clientHeight) &&
                 bounding.left >= 0 &&
                 bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
                 bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
             );
         };        
         
+
+        
         $(document).ready(function () {
 
+            $('#form_submit').click(function(e) {
+                var formData = JSON.stringify($("#socio").serializeArray());
+                $.ajax({
+                type: "POST",
+                url: "https://api.eleve.com/landing/send-formulario-web",
+                data: formData,
+                success: function(){
+                    console.log("success")
+                },
+                dataType: "json",
+                contentType : "application/json"
+                });
+
+            })
+            
             // Main Nav Toggle
             $("#main-nav-toggle").click(function(e) {
                 e.preventDefault;
@@ -692,7 +744,6 @@
                 $(".navbar-brand").removeClass("hide");
                 $("#client-login-footer").toggleClass("hide");
             })
-            
 
             // Carousel
             $('#process-carousel').slick({
@@ -700,7 +751,7 @@
                 arrows: true,
                 infinite: false,
                 variableWidth: true,
-                speed: 300,
+                speed: 500,
                 focusOnSelect: true,
                 slidesToShow: 2,
                 slidesToScroll: 1,
@@ -708,14 +759,14 @@
                     {
                     breakpoint: 991,
                         settings: {
-                        centerMode: true,
+                        centerMode: false,
                         swipe:true,
                         swipeToSlide:true,
                         dots: false,
                         arrows: true,
                         variableWidth: true,
                         infinite: false,
-                        speed: 300,
+                        speed: 500,
                         slidesToShow: 1,
                         slidesToScroll: 1,
                         }
@@ -758,8 +809,6 @@
                     $("#sticky-footer").removeClass("hide");
                 }
 
-
-
                 // Assign active class to nav links while scolling
                 $('.page-anchor').each(function(i) {
                     // console.log("sd" + scrollDistance);
@@ -770,16 +819,16 @@
                     }
                 });
 
-
             });
 
+            // Contact Form
 
 
 
+
+            
         });
 
-
-        
     </script>
 
   </body>
