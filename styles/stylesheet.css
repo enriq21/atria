@@ -318,12 +318,18 @@ label, .label {
     border-radius: 12px;
     margin-right: 16px;
   }
+}
+@media only screen and (min-width: 992px) and (min-width: 992px) {
   .site-header .navbar-client-login .client-login-button:hover {
     background-color: #F0D3FF;
   }
+}
+@media only screen and (min-width: 992px) {
   .site-header .navbar-client-login .client-login-button::last-child {
     margin-right: 0;
   }
+}
+@media only screen and (min-width: 992px) {
   .site-header .navbar-client-login .client-login-button .whatsapp {
     margin-right: 4px;
   }
@@ -477,8 +483,10 @@ label, .label {
   transition: all 0.3s ease-in-out;
   max-height: 72px;
 }
-.sticky-footer:hover {
-  background-color: #F0D3FF;
+@media only screen and (min-width: 992px) {
+  .sticky-footer:hover {
+    background-color: #F0D3FF;
+  }
 }
 .sticky-footer.hide {
   bottom: -72px;
@@ -881,6 +889,9 @@ label, .label {
     background-size: cover;
     opacity: 0.3;
   }
+}
+.hacemos-posible .content-wrap-column {
+  padding-right: 0;
 }
 @media only screen and (min-width: 1200px) {
   .hacemos-posible .no-pad-right {
